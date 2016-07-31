@@ -28,7 +28,8 @@ var api = new ParseServer({
     {
       directAccess: process.env.S3_DIRECT_ACCESS,
       region: process.env.S3_REGION,
-      bucketPrefix: process.env.S3_BUCKET_PREFIX
+      bucketPrefix: process.env.S3_BUCKET_PREFIX,
+      signatureVersion: 'v4'
     }
   ),
 });
