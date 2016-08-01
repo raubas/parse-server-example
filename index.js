@@ -21,6 +21,7 @@ var api = new ParseServer({
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   },
+  publicServerURL: 'http://api.kartforeningen.se/1',
   filesAdapter: new S3Adapter(
     process.env.S3_ACCESS_KEY,
     process.env.S3_SECRET_KEY,
