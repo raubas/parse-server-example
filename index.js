@@ -34,6 +34,13 @@ var api = new ParseServer({
     }
   ),
 });
+
+console.log('Acces key');
+console.log(process.env.S3_ACCESS_KEY);
+console.log('Bucket');
+console.log(process.env.S3_BUCKET);
+console.log('Prefix');
+console.log(process.env.S3_BUCKET_PREFIX);
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:
 // javascriptKey, restAPIKey, dotNetKey, clientKey
